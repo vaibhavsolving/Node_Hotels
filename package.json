@@ -1,0 +1,17 @@
+{
+  "name": "node_stuff",
+  "version": "1.0.0",
+  "description": "Enhencing Node skill",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vaibhav Maurya",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0",
+    "lodash": "^4.17.21",
+    "mongoose": "^8.18.0",
+    "nodemon": "^3.1.10"
+  }
+}
