@@ -31,6 +31,9 @@ const app = express();  //app ke andher express ke sare funtion store kr liye, n
 //mongoDB
 const connectDB = require('./db');
 connectDB();   //call function
+require('dotenv').config();
+const PORT = process.env.PORT || 7000
+
 
 app.use(express.json()); // middleware to read JSON body
 
@@ -84,8 +87,8 @@ app.post('/stuff', (req, res) => {
 
 
 
-app.listen(7000); //from this line of code our server will get localhost...
-app.listen(7000, () => {
+app.listen(PORT); //from this line of code our server will get localhost...
+app.listen(PORT, () => {
     console.log('Express is connected');
 });          //localhost ke sath sath surety bhi mila ki server run ho rha h...
 
